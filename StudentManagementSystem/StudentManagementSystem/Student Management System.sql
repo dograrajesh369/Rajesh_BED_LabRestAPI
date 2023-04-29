@@ -1,0 +1,13 @@
+create database student_management_system;
+use student_management_system;
+SELECT * FROM student_management_system.users;
+SELECT * FROM student_management_system.roles;
+insert into student_management_system.users values(1,'$2a$12$E3v4BOgJTBKn3xFErRjji.TFD4OqQ.oHrQTbHulPPoPPn4x.5sasW','user1');
+insert into student_management_system.users values(2,'$2a$12$E3v4BOgJTBKn3xFErRjji.TFD4OqQ.oHrQTbHulPPoPPn4x.5sasW','user2');
+insert into student_management_system.roles values(1,'ADMIN');
+insert into student_management_system.roles values(2,'USER');
+insert into student_management_system.user_roles values(1,1);
+insert into student_management_system.user_roles values(2,2);
+SELECT * FROM student_management_system.user_roles;
+insert into  student_management_system.student values (1,'India','B.Tech','Suresh','Reddy');
+SELECT * FROM student_management_system.student;
